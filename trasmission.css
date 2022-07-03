@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+}
+
+/*Naviagtion Bar*/
+
+.nav {
+  font-family: "Ubuntu", sans-serif;
+  transition: all 0.3s ease;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  height: 5vh;
+  padding: 1%;
+  width: 100%;
+  border-bottom: 1px solid #232323;
+}
+.logo-img {
+  display: block;
+  width: 25%;
+}
+.logo-img img {
+  width: 75%;
+}
+
+.nav-list {
+  display: block;
+  margin-right: 60px;
+  list-style: none;
+}
+
+.nav-list li {
+  font-weight: 550;
+  line-height: 40px;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 18px;
+  padding: 5px;
+  border-bottom: 3px solid transparent;
+  text-transform: uppercase;
+  margin: 0 5px;
+  transition: all ease-out 0.1s;
+}
+
+.nav-list li a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  margin: 0 5px;
+  height: fit-content;
+  padding: 5px;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid #fb8d52;
+}
+
+.menu-icon {
+  font-size: 2em;
+  color: #232323;
+  line-height: 40px;
+  border-radius: 4px;
+  font-weight: 700;
+  float: right;
+  margin-right: 50px;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* Scroll Bar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(100, 100, 100);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(168, 167, 167);
+}
+
+/* Home */
+
+.header {
+  height: 96vh;
+  background-size: cover;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+  background-image: url("pexels-miguel-á-padriñán-3785927.jpg");
+  background-repeat: none;
+  transition: all 0.2s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 94%);
+}
+
+.name-img-holder {
+  text-align: center;
+  padding: 6rem 0 0 0;
+}
+
+.name-img-holder h1 {
+  color: #fff;
+  padding: 10px;
+  font-size: 2.5rem;
+}
+
+.name-img-holder h3 {
+  color: #fff;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
+
+.ph3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+}
+.about {
+  margin: 5rem 0 5rem 0;
+}
+
+.about h3 {
+  font-size: 1.8em;
+  text-align: start;
+  margin-left: 30px;
+  color: #000000;
+  transition: all 0.2s;
+}
+
+.about-container p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(65, 65, 65);
+  line-height: 25px;
+  transition: all 0.2s;
+}
+
+.about-us-div {
+  margin: 0.5rem 0 0.5rem 2rem;
+  border-left: 6px solid #f15400;
+}
+
+.about-us-div p {
+  margin: 0rem 0 0rem 2rem;
+  width: 95%;
+}
+.vision-div {
+  margin: 3rem 0 0.5rem 2rem;
+  border-left: 6px solid #f15400;
+}
+.vision-div p {
+  margin: 0rem 0 0rem 2rem;
+  width: 95%;
+}
+
+.about h2 {
+  font-size: 1.8em;
+  text-align: start;
+  margin-left: 30px;
+  color: #000000;
+}
+
+/*Products*/
+.heading {
+  text-align: center;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 1px;
+  border-left: 5px solid #f15400;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0 0.5rem 2rem;
+}
+.products-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.product {
+  display: block;
+  width: 90%;
+  text-align: center;
+  padding-left: auto;
+  padding-right: auto;
+  margin: 0.2rem 0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  border-radius: 5px;
+}
+
+.product img {
+  width: 85%;
+  transition: all 0.5s;
+}
+.product img:hover {
+  transform: scale(1.1);
+}
+.product-btn {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #f15400;
+  border-radius: 5px;
+  border: 2px solid #f15400;
+  padding: 0.2rem;
+  transition: all 0.2s;
+}
+.product-btn:hover {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #000;
+  padding: 0.2rem;
+}
+/*Conatct us*/
+.contact-parent {
+  display: block;
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contact-box {
+  border: 2px solid #232323;
+  display: flex;
+  width: 95%;
+  box-shadow: 7px 10px 24px -2px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+.contact-left {
+  display: block;
+  width: 50%;
+  text-align: center;
+}
+.form-box {
+  display: block;
+  width: 50%;
+  align-items: center;
+}
+
+.contact-box form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1.2rem;
+}
+.contact-box form label {
+  color: #232323;
+  font-size: 125%;
+  padding: 1.25rem 0;
+}
+.input {
+  border: 0px solid #232323;
+  border-bottom: 1px solid #232323;
+  background-color: transparent;
+  width: 45%;
+  color: #232323;
+  font-size: 110%;
+  outline: none;
+}
+.submit {
+  width: 25%;
+  padding: 0.5rem;
+  border: 2px solid #f15400;
+  background-color: #f15400;
+  color: #ffff;
+  border-radius: 10px;
+  margin: 1.25rem 0 0 0;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  font-size: 100%;
+}
+.submit:hover {
+  width: 25%;
+  padding: 0.5rem;
+  border: 2px solid #232323;
+  background-color: transparent;
+  color: #232323;
+  border-radius: 10px;
+  margin: 1.25rem 0 0 0;
+  text-transform: uppercase;
+  font-size: 100%;
+}
+.heading-contact {
+  text-transform: uppercase;
+}
+.map {
+  width: 85%;
+  border: 3px solid #f15400;
+  border-radius: 15px;
+  margin-top: 0.8rem;
+}
+.cnt {
+  display: block;
+  padding: 0.25rem;
+  width: 100%;
+  flex-direction: row;
+  text-align: center;
+}
+.cnt ion-icon {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .products-container {
+    display: flex;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+  }
+  .product {
+    display: block;
+    width: 60%;
+    text-align: center;
+  }
+  .contact-box {
+    border: 1.5px solid #232323;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    box-shadow: 7px 10px 24px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  .map {
+    width: 85%;
+    border: 3px solid #f15400;
+    border-radius: 15px;
+    margin-top: 0.8rem;
+  }
+}
